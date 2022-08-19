@@ -1,38 +1,76 @@
-.App {
+body {
+  background-color: #191919;
+}
+
+header {
+  background-color: black;
+  padding: 2.5em 4em;
+}
+
+header h1 {
+  color: red;
+  margin: 0;
+  font-size: 3em;
+  letter-spacing: 0.3em;
+  user-select: none;
+  font-family: Bebas Neue, sans-serif;
+}
+
+.catalogo {
   text-align: center;
+  color: black;
+  background-color: darkgray;
+  margin-bottom: 50px;
+  margin-top: 0;
+  padding-top: 3px;
+  border-bottom: 1px solid gray;
+  letter-spacing: 0.3em;
+  font-family: Bebas Neue, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.catalog-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+  gap: 2em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.movie-card {
+  width: 15em;
+  border: 1px solid gray;
+  border-radius: 1em;
+  overflow: hidden;
+  margin-bottom: 2em;
+  height: 445px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.movie-title {
+  font-size: 1.2em;
+}
+
+.poster-area {
+  width: 100%;
+  position: relative;
+
+}
+
+.poster-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.movie-details {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
   color: white;
+  padding: 0.5em 0;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movie-details h2 {
+  margin: 0;
 }
